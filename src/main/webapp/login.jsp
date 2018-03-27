@@ -10,6 +10,7 @@
     if(username == null && password == null){
         username = "";
     }
+
     else if (username.equals("admin") && password.equals("password") ){
         response.sendRedirect("/profile.jsp");
     }
@@ -19,20 +20,21 @@
 <html>
 <head>
     <title>Login</title>
-    <%@include file="partials/head.jsp"%>
+    <%@include file="partials/login.jsp"%>
 
 </head>
 <body>
 
+<a href="#"><p class="navBtn">FakeBook</p></a>
+<br>
 
 <div id="loginForm">
-    <h1>Login</h1>
-
-<form >
+<form>
     <input type="text" method="POST" action="/login.jsp" name="username" placeholder="username">
+    <br>
     <input type="password" name="password" placeholder="password">
     <br>
-    <input type="submit">
+    <button>Submit</button>
 </form>
 
 </div>
