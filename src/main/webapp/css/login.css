@@ -38,11 +38,19 @@ input{
     margin-bottom: 5px;
     border: none;
     padding: 5px;
+    text-align: center;
 }
 
 button{
-    width: 200px;
-    height: 40px;
+    /*width: 200px;*/
+    /*height: 40px;*/
     border: none;
-    padding: 0;
+    padding: 10px;
+    color: #fff;
+    background-color:transparent;
+    font-weight: bold;
+    border-radius:5%;
+}
+button:hover{
+    cursor: pointer;
 }

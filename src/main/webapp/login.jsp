@@ -4,6 +4,8 @@
 
 <%
 
+
+
     String username = request.getParameter("username");
     String password = request.getParameter("password");
 
@@ -19,22 +21,22 @@
 
 <html>
 <head>
-    <title>Login</title>
-    <%@include file="partials/login.jsp"%>
-
+    <jsp:include page="partials/login.jsp">
+        <jsp:param name="title" value="Login"/>
+    </jsp:include>
 </head>
+
 <body>
 
-<a href="#"><p class="navBtn">FakeBook</p></a>
-<br>
 
 <div id="loginForm">
+    <h1>Fakebook</h1>
 <form>
     <input type="text" method="POST" action="/login.jsp" name="username" placeholder="username">
     <br>
     <input type="password" name="password" placeholder="password">
     <br>
-    <button>Submit</button>
+    <button>Log In</button>
 </form>
 
 </div>
