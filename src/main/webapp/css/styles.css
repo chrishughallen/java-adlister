@@ -1,0 +1,17 @@
+body{
+    background-color:blue;
+    font-family: sans-serif;
+    color: #FFF;
+}
+
+
+#loginForm{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input{
+    height: 30px;
+    width: 200px;
+}
