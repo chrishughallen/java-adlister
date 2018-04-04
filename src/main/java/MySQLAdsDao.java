@@ -17,7 +17,7 @@ public class MySQLAdsDao implements Ads {
                     config.getPassword()
             );
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new RuntimeException("Error connecting to the database!", e);
         }
     }
 
